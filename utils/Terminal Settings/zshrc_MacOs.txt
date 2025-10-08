@@ -75,13 +75,33 @@ plugins=(git)
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+source /opt/homebrew/share/docker/docker.plugin.zsh
 source /opt/homebrew/share/docker-compose/docker-compose.plugin.zsh
+
+
 source /opt/homebrew/share/dotenv/dotenv.plugin.zsh
 source /opt/homebrew/share/history/history.plugin.zsh
 source /opt/homebrew/share/nvm/nvm.plugin.zsh
+source /opt/homebrew/share/npm/npm.plugin.zsh
+source /opt/homebrew/share/pm2/pm2.plugin.zsh
+source /opt/homebrew/share/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+source /opt/homebrew/share/sudo/sudo.plugin.zsh
+
+
 source /opt/homebrew/share/ssh/ssh.plugin.zsh
 source /opt/homebrew/share/vscode/vscode.plugin.zsh
 source /opt/homebrew/share/colorize/colorize.plugin.zsh
+source /opt/homebrew/share/aliases/aliases.plugin.zsh
+# source /opt/homebrew/share/aws/aws.plugin.zsh
+source /opt/homebrew/share/brew/brew.plugin.zsh
+source /opt/homebrew/share/colored-man-pages/colored-man-pages.plugin.zsh
+source /opt/homebrew/share/command-not-found/command-not-found.plugin.zsh
+source /opt/homebrew/share/compleat/compleat.plugin.zsh
+source /opt/homebrew/share/gitignore/gitignore.plugin.zsh
+source /opt/homebrew/share/pip/pip.plugin.zsh
+source /opt/homebrew/share/pipenv/pipenv.plugin.zsh
+
+
 
 
 source $ZSH/oh-my-zsh.sh
