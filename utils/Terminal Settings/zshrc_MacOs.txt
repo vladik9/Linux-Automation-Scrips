@@ -74,7 +74,20 @@ plugins=(git)
 #plugins=(git zsh-autosuggestions zsh-syntax-highlighting you-should-use zsh-bat)
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+source /opt/homebrew/share/docker-compose/docker-compose.plugin.zsh
+source /opt/homebrew/share/dotenv/dotenv.plugin.zsh
+source /opt/homebrew/share/history/history.plugin.zsh
+source /opt/homebrew/share/nvm/nvm.plugin.zsh
+source /opt/homebrew/share/ssh/ssh.plugin.zsh
+source /opt/homebrew/share/vscode/vscode.plugin.zsh
+source /opt/homebrew/share/colorize/colorize.plugin.zsh
+
+
 source $ZSH/oh-my-zsh.sh
+
+# Chroma colorize syntax highlighting
+ZSH_COLORIZE_TOOL=chroma
 
 # User configuration
 
@@ -104,3 +117,10 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias cat="ccat"
+PATH=~/.console-ninja/.bin:$PATH #The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/dexy/.docker/completions $fpath)
+autoload -Uz compinit
+compinit
+# End of Docker CLI completions
