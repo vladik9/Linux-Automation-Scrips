@@ -1,0 +1,9 @@
+#!/bin/bash
+
+claude /logout
+
+unset ANTHROPIC_AUTH_TOKEN
+
+unset ANTHROPIC_API_KEY
+
+ccr code
